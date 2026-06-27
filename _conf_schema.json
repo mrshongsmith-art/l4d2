@@ -1,0 +1,48 @@
+{
+  "webManager": {
+    "description": "L4D2 Web 管理器",
+    "type": "object",
+    "hint": "用于地图列表、删除、上传和下载任务管理。",
+    "items": {
+      "baseUrl": {
+        "description": "入口地址",
+        "type": "string",
+        "hint": "例如 http://101.33.235.138:58641",
+        "default": "http://101.33.235.138:58641"
+      },
+      "username": {
+        "description": "账号",
+        "type": "string",
+        "hint": "当前 Web 接口主要使用密码鉴权，账号用于记录。",
+        "default": ""
+      },
+      "password": {
+        "description": "密码",
+        "type": "string",
+        "hint": "Web 管理器接口使用的 Bearer Token，通常是登录密码。",
+        "obvious_hint": true,
+        "default": ""
+      }
+    }
+  },
+  "serverAddress": {
+    "description": "服务器地址",
+    "type": "string",
+    "hint": "唯一 L4D2 服务器地址，格式：IP:端口。",
+    "default": "101.33.235.138:58642"
+  },
+  "groupIds": {
+    "description": "群号",
+    "type": "list",
+    "hint": "可添加多个群号。只有列表中的群会响应插件命令。",
+    "default": [
+      "4572155"
+    ]
+  },
+  "adminUsers": {
+    "description": "群管理员",
+    "type": "list",
+    "hint": "可添加多个 QQ 号。只有列表中的用户可执行切图、删除、清空、上传、下载地图等重要操作。",
+    "default": []
+  }
+}

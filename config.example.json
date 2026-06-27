@@ -1,0 +1,14 @@
+{
+  "webManager": {
+    "baseUrl": "http://127.0.0.1:58641",
+    "username": "",
+    "password": ""
+  },
+  "serverAddress": "127.0.0.1:27015",
+  "groupIds": [
+    "123456789"
+  ],
+  "adminUsers": [
+    "10000"
+  ]
+}
